@@ -4,7 +4,7 @@ from .views import show_task, show_specific_task
 urlpatterns=[
     
     path('show_task/', show_task),
-    path('show_task/<id>',show_specific_task)
+    path('show_task/<int:id>/',show_specific_task)
     # path('home/', views.home),
     # path('about/', views.about),
     # path('contact/', views.contact),
